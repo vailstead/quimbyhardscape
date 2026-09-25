@@ -6,7 +6,6 @@ Static marketing site for **Quimby Hardscape & Construction**, a hardscape-focus
 
 - `index.html` – single-page marketing site
 - `assets/styles.css` – site styling
-- `.nojekyll` – serves the site as plain static files
 
 If the business uses a different inbox, update the `mailto:` links in `index.html`.
 
