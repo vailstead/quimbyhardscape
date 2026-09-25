@@ -54,6 +54,12 @@ ul {
   font-size: 1.1rem;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .button {
   display: inline-block;
   padding: 0.85rem 1.4rem;
@@ -62,6 +68,12 @@ ul {
   color: var(--accent-dark);
   text-decoration: none;
   font-weight: 700;
+}
+
+.button-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .section {
