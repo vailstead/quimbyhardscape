@@ -6,7 +6,6 @@ Static marketing site for **Quimby Hardscape & Construction**, a hardscape-focus
 
 - `index.html` – single-page marketing site
 - `assets/styles.css` – site styling
-- `.github/workflows/deploy-pages.yml` – GitHub Pages deployment workflow
 - `.nojekyll` – serves the site as plain static files
 
 If the business uses a different inbox, update the `mailto:` links in `index.html`.
@@ -14,9 +13,9 @@ If the business uses a different inbox, update the `mailto:` links in `index.htm
 ## GitHub Pages deployment
 
 1. In GitHub, open **Settings → Pages**
-2. Set **Source** to **GitHub Actions**
-3. Merge this branch into your default branch
-4. The workflow will publish the site automatically
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**
+3. Select the `main` branch and the `/ (root)` folder
+4. Save the settings, then push or merge changes to `main` to publish updates
 
 ## AWS DNS setup
 
