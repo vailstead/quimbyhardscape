@@ -1156,6 +1156,61 @@ footer {
   position: absolute;
 }
 
+.winter-popup {
+  width: min(540px, calc(100% - 2rem));
+  padding: 48px;
+  border: 0;
+  background: var(--cream);
+  color: var(--ink);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+.winter-popup::backdrop {
+  background: rgba(15, 16, 15, 0.72);
+}
+.winter-popup .eyebrow {
+  margin-bottom: 12px;
+}
+.winter-popup h2 {
+  max-width: 420px;
+  margin: 0 0 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(42px, 7vw, 58px);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+.winter-popup > p:not(.eyebrow) {
+  color: var(--muted);
+}
+.winter-popup form {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.winter-popup-close {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 1;
+}
+.winter-popup-close:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+.winter-popup-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px 24px;
+  margin-top: 26px;
+}
+.winter-popup-actions .text-link {
+  color: var(--ink);
+}
+
 @media (max-width: 900px) {
   .snow-promo-grid {
     grid-template-columns: 1fr;
@@ -1203,5 +1258,15 @@ footer {
   }
   .service-detail-card {
     min-height: 0;
+  }
+  .winter-popup {
+    padding: 42px 24px 28px;
+  }
+  .winter-popup-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .winter-popup-actions .button {
+    text-align: center;
   }
 }
